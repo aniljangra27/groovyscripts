@@ -1,0 +1,20 @@
+#Create Page Using groovy
+
+println("Create page structure")
+pageBuilder.content {
+    mysite {
+        americas {
+            us {
+                en {
+                    fragments {
+                        header {
+                            newHeaderTest("New Header", "cq:template": "/apps/mysite/ui/templates/generic", "sling:resourceType": "mysite/ui/pages/content/generic",  "jcr:lastModified": Calendar.instance)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+session.save();
