@@ -1,0 +1,28 @@
+nodeBuilder.content {
+    mysite {
+        americas {
+            us {
+                en {
+                    fragments {
+                        header {
+                            newHeaderTest {
+                                "jcr:content" {
+                                    par("nt:unstructured","sling:resourceType": "mysite/ui/components/parsys") {
+                                        headernew("sling:resourceType": "mysite/ui/components/fragment/headernew"){
+                                            menu("sling:resourceType": "mysite/ui/components/menunew"){
+                                                menulinks("jcr:lastModified": Calendar.instance)
+                                                navpar("sling:resourceType": "mysite/ui/components/parsys")
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }
+session.save();
