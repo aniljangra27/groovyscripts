@@ -1,0 +1,4 @@
+//move "sourceAbsolutePath" to "destinationAbsolutePath" - session.move(sourceAbsolutePath, destinationAbsolutePath), 
+//except that the Session is saved automatically when the move is completed.
+session.move('/content/we-retail/ch/it', '/content/we-retail/ch/en')
+session.save();
